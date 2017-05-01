@@ -1,0 +1,119 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-04-26 02:55+0100\n"
+"PO-Revision-Date: 2017-04-26 02:58+0100\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: Poedit 2.0.1\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=5; plural=(n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n<11 ? 3 : "
+"4);\n"
+"Language: ga\n"
+
+msgid "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+    "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+    "p, li { white-space: pre-wrap; }\n"
+    "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+    "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Username</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+    "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+    "p, li { white-space: pre-wrap; }\n"
+    "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+    "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Ainm úsáideora</span></p></body></html>"
+
+msgid "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+    "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+    "p, li { white-space: pre-wrap; }\n"
+    "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+    "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Password</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+    "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+    "p, li { white-space: pre-wrap; }\n"
+    "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+    "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Focal Faire</span></p></body></html>"
+
+#: erasmus_home.py:296 erasmus_home.py:298
+msgid "Log-In"
+msgstr "Logáil isteach"
+
+#: erasmus_home.py:297
+msgid ""
+"<html><head/><body><p align=\"center\"><span style=\" font-size:16pt; font-"
+"weight:600;\">ERASMUS</span></p></body></html>"
+msgstr ""
+"<html><head/><body><p align=\"center\"><span style=\" font-size:16pt; font-"
+"weight:600;\">ERASMUS</span></p></body></html>"
+
+#: erasmus_home.py:299
+msgid "Calendar"
+msgstr "Féilire"
+
+#: erasmus_home.py:300
+msgid "Don't have an account?"
+msgstr "Ná bhfuil cuntas?"
+
+#: erasmus_home.py:301
+msgid "Sign up"
+msgstr "Clarú"
+
+#: erasmus_home.py:302
+msgid "MENU"
+msgstr "Clár"
+
+msgid "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">Type here to search. . .</span></p></body></html>"
+msgstr "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">Clóscríobh anseo chun cuardach a dhéanamh. . .</span></p></body></html>"
+
+#: erasmus_home.py:308
+msgid "ENGLISH"
+msgstr "BÉARLA"
+
+#: erasmus_home.py:309
+msgid "IRISH"
+msgstr "GAEILGE"
+
+#: erasmus_home.py:310
+msgid ""
+"<html><head/><body><p align=\"center\"><span style=\" font-family:'verdana,"
+"Arial,Tahoma,sans-serif'; font-size:14pt; font-weight:600; color:#000000;"
+"\">EXCHANGE isn't a year in your life, </span></p><p align=\"center\"><span "
+"style=\" font-family:'verdana,Arial,Tahoma,sans-serif'; font-size:14pt; font-"
+"weight:600; color:#000000;\">it's a LIFE in a year.</span></p></body></html>"
+msgstr ""
+"<html><head/><body><p align=\"center\"><span style=\" font-family:'verdana,"
+"Arial,Tahoma,sans-serif'; font-size:14pt; font-weight:600; color:#000000;"
+"\">Ní MALARTÚ in aghaidh na bliana i do shaol, </span></p><p align=\"center"
+"\"><span style=\" font-family:'verdana,Arial,Tahoma,sans-serif'; font-"
+"size:14pt; font-weight:600; color:#000000;\">tá sé ina LIFE in aghaidh na "
+"bliana.</span></p></body></html>"
+
+#: erasmus_home.py:322
+msgid ""
+"Testimonials by Siobhain: It was an awesome experience! I recommend students "
+"to branch out and create more memories through Erasmus."
+msgstr ""
+"Testimonials ag Siobhain: Bhí sé taithí uamhnach! Molaim daltaí a brainse "
+"amach agus cuimhní cinn níos mó a chruthú trí Erasmus."
+
+#: erasmus_home.py:335
+msgid "<html><head/><body><p><span style=\" font-size:28pt;\">WELCOME</span></p><p><span style=\" font-size:28pt;\">TO</span></p><p><span style=\" font-size:28pt;\">ERASMUS</span></p><p><span style=\" font-size:28pt;\">HOME</span></p><p><span style=\" font-size:28pt;\">PAGE.</span></p></body></html>"
+msgstr "<html><head/><body><p><span style=\" font-size:28pt;\">FÁILTE</span></p><p><span style=\" font-size:28pt;\">CHUIG</span></p><p><span style=\" font-size:28pt;\">ERASMUS</span></p><p><span style=\" font-size:28pt;\">LEATHANACH</span></p><p><span style=\" font-size:28pt;\">BAILE.</span></p></body></html>"
+
+#: erasmus_home.py:336
+msgid "<html><head/><body><p><span style=\" font-size:10pt; font-weight:600;\">To navigate the slideshow,</span></p><p><span style=\" font-size:12pt; font-weight:600;\">press the button</span></p><p><span style=\" font-size:14pt; font-weight:600;\">BELOW!</span></p></body></html>"
+msgstr "<html><head/><body><p><span style=\" font-size:10pt; font-weight:600;\">Chun nsclnt r n tspnts smln,</span></p><p><span style=\" font-size:12pt; font-weight:600;\">brúigh an cnaipe</span></p><p><span style=\" font-size:14pt; font-weight:600;\">THÍOS!!</span></p></body></html>"
