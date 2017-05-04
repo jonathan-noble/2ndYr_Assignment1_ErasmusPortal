@@ -3,11 +3,13 @@ Program Name:   SGM2 Assignment - Home Page with Log-in UI of Erasmus Portal
 Author:         Jonathan Noble - C15487922 (DT282/2)
 '''
 
+#kits and libraries are stored here
 from PyQt4 import QtCore, QtGui
 from PyQt4.QtWebKit import QWebView
 import sys
 import gettext
 import locale
+import icons_rc
 from functools import partial
 
 
@@ -26,7 +28,7 @@ except AttributeError:
     def _translate(context, text, disambig):
         return QtGui.QApplication.translate(context, text, disambig)
 
-#---------------------------------------------------------------------------------------#
+#-----------------------------------------------------------------------------------------------------#
 
 #MainWindow is implemented here
 class MainWindow(QtGui.QMainWindow):
@@ -50,6 +52,7 @@ class MainWindow(QtGui.QMainWindow):
         MainWindow.setMaximumSize(QtCore.QSize(1269, 688))
         MainWindow.setStyleSheet(_fromUtf8(""))
 
+        #All the Qt Designer widget implementations are separated by functions
         self.loginWid()
         self.signUpWid()
         self.menuWid()
@@ -66,10 +69,12 @@ class MainWindow(QtGui.QMainWindow):
         self.motto_wid.raise_()
         self.label_welcomeSlide.raise_()
 
-        self.enTranslate(self.slides_widget)
-        self.setCentralWidget(self.slides_widget)
+
+        self.enTranslate(self.slides_widget)        #default language when the window starts
+        self.setCentralWidget(self.slides_widget)   #main layout would be based on the slides_widget
         self.retranslateUi(MainWindow)
 
+        #initializing the windows that are opened here
         self.descWin = DescWindow(self)
         self.testWin = TestWindow(self)
         self.instructWin = InstructWindow(self)
@@ -283,7 +288,7 @@ class MainWindow(QtGui.QMainWindow):
         self.enter_btn = QtGui.QPushButton( self.toolbar_widget)
         self.enter_btn.setGeometry(1150, 7, 80, 30)
         self.enter_btn.setStyleSheet(_fromUtf8(self.styledata))
-        self.enter_btn.clicked.connect(self.run)
+        self.enter_btn.clicked.connect(self.feedb)
         # display
         self.ans = QtGui.QLabel(self.toolbar_widget)
         self.ans.setGeometry(825, 40, 300, 30)
@@ -321,15 +326,15 @@ class MainWindow(QtGui.QMainWindow):
 #---------------------------------------------------------------------------------------------------------------------#
 #               FUNCTIONALITIES ARE SET here
 
-    def displayTime(self):
+    def displayTime(self):      # real-time display
         self.label_timer.setText(QtCore.QDateTime.currentDateTime().toString())
 
-    def run(self):
+    def feedb(self):     # feedback submitted is echoed back in the ans label
         input = self.le.text()
         self.ans.setText(input)
 
 
-    def handleLogin(self):
+    def handleLogin(self):      #the log-in user authentication with error-handling
         if (self.textBrowser_userN.toPlainText() == 'noble' and
             self.textBrowser_pw.toPlainText() == 'lad1234'):
             self.nextWin.resize(300, 200)
@@ -337,11 +342,11 @@ class MainWindow(QtGui.QMainWindow):
         else:
             QtGui.QMessageBox.warning(self, 'Error', 'Username or password is wrong! Try again.')
 
-    def welcomePop(self):
+    def welcomePop(self):       #the function to release the labels when the slideshow button is clicked
         self.label_wel.setGeometry(QtCore.QRect(70, 1000, 421, 401))
         self.label_slidenav.setGeometry(QtCore.QRect(315, 1000, 201, 81))
 
-    def openDescWin(self):
+    def openDescWin(self):      #Opens relevant windows
         self.descWin.resize(500,500)
         self.descWin.show();
 
@@ -354,7 +359,7 @@ class MainWindow(QtGui.QMainWindow):
         self.instructWin.show();
 
 
-    def openBrowserWin(self):
+    def openBrowserWin(self):       # Opens up the webcourses  browser through a link
         self.feedBack = WebBrowser()
         self.feedBack.loadURL()
 
@@ -404,8 +409,9 @@ class MainWindow(QtGui.QMainWindow):
         self.le.setText(_("Feedback: Great interface!"))
         self.enter_btn.setText(_("Submit"))
 
-#--------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------------
 #                                     ADDED WINDOWS
+
 class DescWindow(QtGui.QMainWindow):
     def __init__(self, parent=None):
         super(DescWindow, self).__init__(parent)
@@ -510,7 +516,7 @@ class Slides(QtGui.QWidget):
     def timerEvent(self, e=None):
         if self.step >= len(self.image_files):
             self.timer.start(self.delay, self)
-            self.step = 0
+            self.step = 0       #The pictures will reset from the start after the length of the image array has been finished
             return
         self.timer.start(self.delay, self)
         file = self.image_files[self.step]
@@ -518,11 +524,10 @@ class Slides(QtGui.QWidget):
         self.label.setPixmap(image)
         self.step += 1
 
-
+#Array of images being stored here
 image_files = ["images\slide1.jpg", "images\slide2.jpg", "images\slide3.jpg",
  "images\slide4.jpg", "images\slide5.jpg"]
 
-import icons_rc
 
 if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)
