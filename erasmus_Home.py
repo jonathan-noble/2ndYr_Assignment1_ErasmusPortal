@@ -72,7 +72,7 @@ class MainWindow(QtGui.QMainWindow):
 
         self.descWin = DescWindow(self)
         self.testWin = TestWindow(self)
-        self.infoWin = InfoWindow(self)
+        self.instructWin = InstructWindow(self)
 
 
     def defineLayout(self): #define the layout of the main window and apply stylesheet
@@ -105,13 +105,13 @@ class MainWindow(QtGui.QMainWindow):
         self.textBrowser_userN.setStyleSheet(_fromUtf8(self.styledata))
         self.textBrowser_userN.setObjectName(_fromUtf8("textBrowser_userN"))
 
-        self.pushButton_Info = QtGui.QPushButton(self.tab_login)
-        self.pushButton_Info.setGeometry(QtCore.QRect(380, 10, 51, 51))
-        self.pushButton_Info.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
-        self.pushButton_Info.setStyleSheet(_fromUtf8(self.styledata))
-        self.pushButton_Info.setText(_fromUtf8(""))
-        self.pushButton_Info.setObjectName(_fromUtf8("pushButton_Info"))
-        self.pushButton_Info.clicked.connect(partial(self.openInfoWin))
+        self.pushButton_Instruct = QtGui.QPushButton(self.tab_login)
+        self.pushButton_Instruct.setGeometry(QtCore.QRect(380, 10, 51, 51))
+        self.pushButton_Instruct.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
+        self.pushButton_Instruct.setStyleSheet(_fromUtf8(self.styledata))
+        self.pushButton_Instruct.setText(_fromUtf8(""))
+        self.pushButton_Instruct.setObjectName(_fromUtf8("pushButton_Instruct"))
+        self.pushButton_Instruct.clicked.connect(partial(self.openInstructWin))
 
         self.textBrowser_pw = QtGui.QTextEdit(self.tab_login)
         self.textBrowser_pw.setGeometry(QtCore.QRect(140, 180, 221, 31))
@@ -349,9 +349,9 @@ class MainWindow(QtGui.QMainWindow):
         self.testWin.resize(500,500)
         self.testWin.show();
 
-    def openInfoWin(self):
-        self.infoWin.resize(300, 200)
-        self.infoWin.show();
+    def openInstructWin(self):
+        self.instructWin.resize(300, 200)
+        self.instructWin.show();
 
 
     def openBrowserWin(self):
@@ -450,11 +450,11 @@ class NextWindow(QtGui.QMainWindow):
         self.textBrowser_slide.append("Login Successful! Please wait as the next page loads for you.")
         self.textBrowser_slide.resize(300,200)
 
-class InfoWindow(QtGui.QMainWindow):
+class InstructWindow(QtGui.QMainWindow):
     def __init__(self, parent=None):
-        super(InfoWindow, self).__init__(parent)
+        super(InstructWindow, self).__init__(parent)
 
-        self.setWindowTitle("Information")
+        self.setWindowTitle("Instruction")
 
         self.buttonBox = QtGui.QDialogButtonBox(self)
         self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
